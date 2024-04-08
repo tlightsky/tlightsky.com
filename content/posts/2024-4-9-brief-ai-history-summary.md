@@ -37,7 +37,33 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 
 # 从有监督到无监督
 
-### Transformer
+### [Transformer](https://www.zhihu.com/zvideo/1437034536677404672) (Attention Is All You Need)
+(CNN / RNN 终结者？)
+
+* 把Encoder/Decoder 中 RNN/CNN 转为只使用 Attention
+* 对比RNN
+    * RNN的H(t)需要依赖H(t-1)的结果，难以并行
+    * 深度较深之后，前后关联性会消失
+* 对比CNN
+    * 较难跨较大区域进行关联
+    * CNN有多输出通道，可以同时关注多个区域（MultiHead来源）
+* Attention
+    * 可以并行
+    * 更好的结果
+    * 前身[Seq2Seq](https://zh.d2l.ai/chapter_recurrent-modern/seq2seq.html#sec-seq2seq)，引入了Encoder/Decoder+RNN
+        * Encoder使用RNN依次将词的影响嵌入到隐藏层中
+        * Decoder使用Encoder的state作为上下文输入，再结合每个步骤已产生的内容，来预测下一个字符
+        * 编码器与通过```<eos>```结束，解码器开始为```<bos>```
+    * [Attention](https://zh.d2l.ai/chapter_attention-mechanisms/attention-cues.html)
+        * Q（查询，意志线索）x K（键，非意志线索）x V（值，感觉输入） 
+        * Q x K (注意力评分函数，如高斯核)
+        * [加性注意力](https://zh.d2l.ai/chapter_attention-mechanisms/attention-scoring-functions.html#subsec-additive-attention)，注意力评分函数中具备Wq，Wk的可学参数
+    * [SelfAttention](https://zh.d2l.ai/chapter_attention-mechanisms/self-attention-and-positional-encoding.html)
+    * [MultiHead](https://zh.d2l.ai/chapter_attention-mechanisms/multihead-attention.html)
+    * [Softmax](https://zh.d2l.ai/chapter_linear-networks/softmax-regression.html)，转换成概率分布（人话，和为1）
+    * 位置编码
+
+* 根据Karpathy的[分享](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=4s)，只是预测下个单词的Transformer其实没有办法完成问答，需要一些User/Assitant的预料进行第一步的FineTune，再经过HFML进行第二步的强化学习的过程
 
 ### BERT
 
