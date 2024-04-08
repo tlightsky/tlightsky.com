@@ -13,7 +13,7 @@ categories: javascript
 
 
 ## mysql in docker
-{% highlight shell %}
+``` shell
 mysql:
   image: mysql/mysql-server
   ports:
@@ -24,4 +24,4 @@ mysql:
     - MYSQL_PASSWORD=GreatPassword
   volumes:
     - "./datadir:/var/lib/mysql"
-{% endhighlight %}
+```
