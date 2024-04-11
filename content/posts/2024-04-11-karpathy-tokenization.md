@@ -26,6 +26,9 @@ tags = ["AI"]
 
 * GPT-2 Tokenizer: https://github.com/openai/gpt-2/blob/master/src/encoder.py#L53
 * [Kapathy Basic Tokenizer](https://github.com/karpathy/minbpe/blob/master/minbpe/basic.py)
+    * self.merges: (a, a) => Z, (a, b) => Y, ... 
+    * self.vocab: XdXac => aaabdaaabac
+
 
 # Some other info
 在深度学习中，常用的词元化（tokenization）方法包括以下几种：
