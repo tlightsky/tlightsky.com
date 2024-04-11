@@ -26,6 +26,8 @@ tags = ["AI"]
 * [Transformer 2017.6.12 Attention Is All You Need](https://en.wikipedia.org/wiki/Attention_Is_All_You_Need) 
     * [papper](https://arxiv.org/abs/1706.03762)
     * [read](https://zhuanlan.zhihu.com/p/338817680)
+* [BERT 2018.10.11 Pre-training of Deep Bidirectional Transformers for Language Understanding](https://en.wikipedia.org/wiki/BERT_(language_model))
+    * [papper](https://arxiv.org/abs/1810.04805v2)
 * [GPT-2 partially:2019.2, fully:2019.11.5 Language Models are Unsupervised Multitask Learners
 ](https://en.wikipedia.org/wiki/GPT-2)
     * [repo](https://github.com/openai/gpt-2)
