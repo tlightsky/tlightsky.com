@@ -15,7 +15,8 @@ tags = ["AI"]
 
 * [AlextNet 2012.9.30 ImageNet Chanllenge](https://en.wikipedia.org/wiki/AlexNet)
     * [papper](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
-* [VAE 2012.12.20](https://en.wikipedia.org/wiki/Variational_autoencoder)
+* [VAE 2012.12.20 Auto-Encoding Variational Bayes
+](https://en.wikipedia.org/wiki/Variational_autoencoder)
     * [papper](https://arxiv.org/abs/1312.6114)
 * [U-Net 2014.11.14 Fully Convolutional Networks for Semantic Segmentation
 ](https://en.wikipedia.org/wiki/U-Net)
@@ -24,17 +25,23 @@ tags = ["AI"]
     * [papper](https://arxiv.org/abs/1512.03385)
 * [Transformer 2017.6.12 Attention Is All You Need](https://en.wikipedia.org/wiki/Attention_Is_All_You_Need) 
     * [papper](https://arxiv.org/abs/1706.03762)
+    * [read](https://zhuanlan.zhihu.com/p/338817680)
 * [GPT-2 partially:2019.2, fully:2019.11.5 Language Models are Unsupervised Multitask Learners
 ](https://en.wikipedia.org/wiki/GPT-2)
     * [repo](https://github.com/openai/gpt-2)
     * [papper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 * [Vit 2020.10.22 An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://en.wikipedia.org/wiki/Vision_transformer)
-    * [papper](https://arxiv.org/abs/2010.11929)    
+    * [papper](https://arxiv.org/abs/2010.11929)
+    * [read](https://zhuanlan.zhihu.com/p/412910412)
 * [DALL-E/CLIP 2021.2.26](https://en.wikipedia.org/wiki/DALL-E)
     * [repo](https://github.com/OpenAI/CLIP)
     * [papper](https://arxiv.org/abs/2103.00020)
 * [Stable Diffusion 2022.8.22](https://en.wikipedia.org/wiki/Stable_Diffusion)
     * [pappers](https://en.wikipedia.org/wiki/Stable_Diffusion#Releases)
+* [LLaMA2](https://en.wikipedia.org/wiki/LLaMA)
+    * [Llama-Chinese](https://github.com/LlamaFamily/Llama-Chinese)
+    * [read](https://zhuanlan.zhihu.com/p/636784644)
+    * [mini LLaMA](https://zhuanlan.zhihu.com/p/652664029)
 
 # 深度神经网络的再崛起，起源于视觉
 一切的起源还需要追述到李飞飞创建ImageNet，并且举办挑战赛说起。
@@ -91,6 +98,7 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
     * 位置编码
 
 * 根据Karpathy的[分享](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=4s)，只是预测下个单词的Transformer其实没有办法完成问答，需要一些User/Assitant的预料进行第一步的FineTune，再经过HFML进行第二步的强化学习的过程
+* 较为适应翻译类型的任务
 
 
 ### [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) （Language Models are Unsupervised Multitask Learners）
