@@ -24,13 +24,17 @@ tags = ["AI"]
     * [papper](https://arxiv.org/abs/1512.03385)
 * [Transformer 2017.6.12 Attention Is All You Need](https://en.wikipedia.org/wiki/Attention_Is_All_You_Need) 
     * [papper](https://arxiv.org/abs/1706.03762)
-* [GPT-2 partially:2019.2, fully:2019.11.5](https://en.wikipedia.org/wiki/GPT-2)
+* [GPT-2 partially:2019.2, fully:2019.11.5 Language Models are Unsupervised Multitask Learners
+](https://en.wikipedia.org/wiki/GPT-2)
     * [repo](https://github.com/openai/gpt-2)
     * [papper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
-* [DALL-E/CLIP 2021](https://en.wikipedia.org/wiki/DALL-E)
+* [Vit 2020.10.22 An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://en.wikipedia.org/wiki/Vision_transformer)
+    * [papper](https://arxiv.org/abs/2010.11929)    
+* [DALL-E/CLIP 2021.2.26](https://en.wikipedia.org/wiki/DALL-E)
     * [repo](https://github.com/OpenAI/CLIP)
     * [papper](https://arxiv.org/abs/2103.00020)
-* [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion)
+* [Stable Diffusion 2022.8.22](https://en.wikipedia.org/wiki/Stable_Diffusion)
+    * [pappers](https://en.wikipedia.org/wiki/Stable_Diffusion#Releases)
 
 # 深度神经网络的再崛起，起源于视觉
 一切的起源还需要追述到李飞飞创建ImageNet，并且举办挑战赛说起。
