@@ -1,6 +1,6 @@
 +++
 title = "Karpathy Transformer Tokeinzer"
-date = 2024-04-09
+date = 2024-04-11
 description = ""
 
 [taxonomies]
