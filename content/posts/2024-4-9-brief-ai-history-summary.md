@@ -38,6 +38,10 @@ tags = ["AI"]
 * [DALL-E/CLIP 2021.2.26](https://en.wikipedia.org/wiki/DALL-E)
     * [repo](https://github.com/OpenAI/CLIP)
     * [papper](https://arxiv.org/abs/2103.00020)
+* [MAE 2021.11.11 Masked Autoencoders Are Scalable Vision Learners
+](https://www.zhihu.com/question/498364604/answer/3337675217)
+    * [papper](https://arxiv.org/abs/2111.06377)
+    * [read](https://zhuanlan.zhihu.com/p/439554945)
 * [Stable Diffusion 2022.8.22](https://en.wikipedia.org/wiki/Stable_Diffusion)
     * [pappers](https://en.wikipedia.org/wiki/Stable_Diffusion#Releases)
 * [LLaMA2](https://en.wikipedia.org/wiki/LLaMA)
