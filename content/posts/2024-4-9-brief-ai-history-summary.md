@@ -37,6 +37,8 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 
 # 从有监督到无监督
 
+### [RNN](https://zh.d2l.ai/chapter_recurrent-neural-networks/rnn-scratch.html#id4) Seq2Seq 的Encoder/Decoder使用RNN来作为序列的预测器
+
 ### [Transformer](https://www.zhihu.com/zvideo/1437034536677404672) (Attention Is All You Need)
 (CNN / RNN 终结者？)
 
@@ -58,12 +60,15 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
         * Q（查询，意志线索）x K（键，非意志线索）x V（值，感觉输入） 
         * Q x K (注意力评分函数，如高斯核)
         * [加性注意力](https://zh.d2l.ai/chapter_attention-mechanisms/attention-scoring-functions.html#subsec-additive-attention)，注意力评分函数中具备Wq，Wk的可学参数
-    * [SelfAttention](https://zh.d2l.ai/chapter_attention-mechanisms/self-attention-and-positional-encoding.html)
+    * [SelfAttention](https://zh.d2l.ai/chapter_attention-mechanisms/self-attention-and-positional-encoding.html)，看起来是QKV都等于X，只学一个Wq，Wk？
     * [MultiHead](https://zh.d2l.ai/chapter_attention-mechanisms/multihead-attention.html)
     * [Softmax](https://zh.d2l.ai/chapter_linear-networks/softmax-regression.html)，转换成概率分布（人话，和为1）
     * 位置编码
 
 * 根据Karpathy的[分享](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=4s)，只是预测下个单词的Transformer其实没有办法完成问答，需要一些User/Assitant的预料进行第一步的FineTune，再经过HFML进行第二步的强化学习的过程
+
+
+### [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) （Language Models are Unsupervised Multitask Learners）
 
 ### BERT
 
