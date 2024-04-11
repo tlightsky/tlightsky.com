@@ -8,15 +8,14 @@ tags = ["AI"]
 +++
 
 
-# [Video](https://www.youtube.com/watch?v=zduSFxRajkE)
-
-
+# [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE)
+Brief Summary
 * chars to vector (oneshot)
 * words to vector
 * Unicode code to vector
     * too big (149813)
 * UTF8 - most common used
-    * MegaByte: Predicting Million-byte Sequences with Multiscale Transformer
+    * papper MegaByte: put sth like byte pair inside net
     * Still too big
 * Byte pair encoding
     * aaabdaaabac
@@ -24,8 +23,9 @@ tags = ["AI"]
     * ZYdZYac (Y=ab, Z=aa)
     * XdXac (X=ZY, Y=ab, Z=aa)
 
-* GPT-2 Tokenizer: https://github.com/openai/gpt-2/blob/master/src/encoder.py#L53
-* [Kapathy Basic Tokenizer](https://github.com/karpathy/minbpe/blob/master/minbpe/basic.py)
+Code ref in video lesson:
+* [GPT-2 Tokenizer][GPT-2 Tokenizer]
+* [Kapathy Basic Tokenizer][Kapathy Basic Tokenizer]
     * self.merges: (a, a) => Z, (a, b) => Y, ... 
     * self.vocab: XdXac => aaabdaaabac
 
@@ -39,3 +39,7 @@ tags = ["AI"]
 * 字符级别分词（Character-level Tokenization）：将文本按照字符进行分割，将每个字符作为一个词元。这种方法对于处理字符级别的任务（如拼写检查、机器翻译等）很有用。
 * 子词（Subword）分词：将单词切分为更小的单元，如词根、前缀或后缀等。这种方法可以处理未登录词（out-of-vocabulary）问题，并且对于具有复杂形态的语言（如德语、芬兰语）也很有效。常见的子词分词算法有Byte-Pair Encoding（BPE）和SentencePiece。
 这些方法的选择取决于特定的任务和语言，不同的词元化方法可能适用于不同的场景。在使用深度学习进行文本处理时，需要根据具体情况选择合适的词元化方法。
+
+
+[GPT-2 Tokenizer]: https://github.com/openai/gpt-2/blob/master/src/encoder.py#L53
+[Kapathy Basic Tokenizer]: https://github.com/karpathy/minbpe/blob/master/minbpe/basic.py
