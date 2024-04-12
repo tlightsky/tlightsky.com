@@ -122,6 +122,7 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
    * 下游任务使用时不需要调整模型，不需要FineTune
    * 增加Prompt，提示当前是在做什么任务
    * 使用Common Crawl，TB级别数据，信噪比较低，转而使用reddit，8M txt，40GB txt
+
 ### GPT-3 2020/05 （给到比较少的下游用例）
 * 175B, params
 * 下游任务时不做主模块的梯度更新
@@ -141,6 +142,5 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 
 ### 3DGS
   * 高斯表达
-
 
 [MLi ReadPapper](https://github.com/mli/paper-reading)
