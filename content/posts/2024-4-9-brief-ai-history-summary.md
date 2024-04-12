@@ -118,11 +118,17 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 
 ### [GPT-2 2019/02](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) （Language Models are Unsupervised Multitask Learners）
 * WebText, 1M text, 1.5B params
-* ZeroShot，泛化性更强，多任务学习
-   * 下游任务使用时不需要调整模型
+* ZeroShot，泛化性更强，多任务学习（不给到下游应用样例）
+   * 下游任务使用时不需要调整模型，不需要FineTune
    * 增加Prompt，提示当前是在做什么任务
    * 使用Common Crawl，TB级别数据，信噪比较低，转而使用reddit，8M txt，40GB txt
-### GPT-3 2020/05
+### GPT-3 2020/05 （给到比较少的下游用例）
+* 175B, params
+* 下游任务时不做主模块的梯度更新
+
+### Instruction GPT
+
+### ChatGPT（GPT-4）
 
 # 弱监督的视觉模型
 
