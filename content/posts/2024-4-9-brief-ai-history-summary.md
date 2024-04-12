@@ -112,11 +112,14 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 
 ### BERT 2018/10
 * encoder only
+* 遮掩语句的一部分而不是预测下个Token
 * 受GPT启发
 * 数据集是GPT 4倍数据，参数大三倍
 
 ### [GPT-2 2019/02](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) （Language Models are Unsupervised Multitask Learners）
-
+* WebText, 1M text, 1.5B params
+* ZeroShot，泛化性更强，多任务学习
+   * 下游任务使用时不需要调整模型
 ### GPT-3 2020/05
 
 # 弱监督的视觉模型
