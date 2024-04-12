@@ -106,11 +106,18 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 * 根据Karpathy的[分享](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=4s)，只是预测下个单词的Transformer其实没有办法完成问答，需要一些User/Assitant的预料进行第一步的FineTune，再经过HFML进行第二步的强化学习的过程
 * 较为适应翻译类型的任务
 
+### GPT 2018/06
+* 先训练通用的预测下个语句的模型
+* 再进行FineTune，即训练一个线性层对于下游任务进行适配，分类，蕴含，相似，多选
 
-### [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) （Language Models are Unsupervised Multitask Learners）
+### BERT 2018/10
+* encoder only
+* 受GPT启发
+* 数据集是GPT 4倍数据，参数大三倍
 
-### BERT
+### [GPT-2 2019/02](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) （Language Models are Unsupervised Multitask Learners）
 
+### GPT-3 2020/05
 
 # 弱监督的视觉模型
 
