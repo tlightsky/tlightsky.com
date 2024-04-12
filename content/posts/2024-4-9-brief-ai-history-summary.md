@@ -120,6 +120,8 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 * WebText, 1M text, 1.5B params
 * ZeroShot，泛化性更强，多任务学习
    * 下游任务使用时不需要调整模型
+   * 增加Prompt，提示当前是在做什么任务
+   * 使用Common Crawl，TB级别数据，信噪比较低，转而使用reddit，8M txt，40GB txt
 ### GPT-3 2020/05
 
 # 弱监督的视觉模型
