@@ -118,6 +118,7 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 * 双向，遮掩语句的一部分而不是预测下个Token(完形填空)
 * 受GPT和ELMo启发
 * 数据集是GPT 4倍数据，参数大三倍
+* 放入 [CLS] [SEP]标识
 * pre-training: 无标号数据进行参数训练
 * fine-tuning: 预训练初始化参数，有标号的数据进行训练
 * 所属句子，位置信息都是学习得到的
@@ -141,7 +142,9 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 
 ### ViT
 * 使用Transformer来处理图片
-* 需要降低序列长度，这里将16x16合并为一个（patch embedding:Linear Projection of Flattened Patches）
+* 需要降低序列长度，这里将16x16合并为一个
+    * patch embedding:Linear Projection of Flattened Patches
+    * 它是个全连接层
 * CNN，先验信息，locality和平移不变性
 * 但是如果数据提升后，可以超过CNN
 * 借鉴BERT的[CLS] classification当做第一个HEAD，用于分类
