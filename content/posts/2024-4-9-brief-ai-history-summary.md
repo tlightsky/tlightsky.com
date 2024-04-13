@@ -113,12 +113,15 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 * 再进行FineTune，即添加一个线性层和前面的模型一起梯度更新，对于下游任务进行适配，分类，蕴含，相似，多选
 
 ### BERT 2018/10 Bidirectional Encoder Representations from Transformers
-* Google
+* Google，主要用于分类问题
 * encoder only， 深
 * 预训练模型（后续可以再训练/Finetune）
-* 双向，遮掩语句的一部分而不是预测下个Token
-* 受GPT启发
+* 双向，遮掩语句的一部分而不是预测下个Token(完形填空)
+* 受GPT和ELMo启发
 * 数据集是GPT 4倍数据，参数大三倍
+* pre-training: 无标号数据进行参数训练
+* fine-tuning: 预训练初始化参数，有标号的数据进行训练
+* 所属句子，位置信息都是学习得到的
 
 ### [GPT-2 2019/02](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) （Language Models are Unsupervised Multitask Learners）
 * WebText, 1M text, 1.5B params
