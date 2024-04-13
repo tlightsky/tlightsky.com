@@ -102,7 +102,6 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
     * [MultiHead](https://zh.d2l.ai/chapter_attention-mechanisms/multihead-attention.html): 因为没有使用Additive Attention，将QKV以可学习参数W投影到低纬度进行Attention计算，再加和，使得反向传播的时候可以学习到不同的主题
     * [Softmax](https://zh.d2l.ai/chapter_linear-networks/softmax-regression.html)，转换成概率分布（人话，和为1）
     * 位置编码
-
 * 根据Karpathy的[分享](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=4s)，只是预测下个单词的Transformer其实没有办法完成问答，需要一些User/Assitant的预料进行第一步的FineTune，再经过HFML进行第二步的强化学习的过程
 * 较为适应翻译类型的任务
 
