@@ -77,7 +77,7 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 
 ### [RNN](https://zh.d2l.ai/chapter_recurrent-neural-networks/rnn-scratch.html#id4) Seq2Seq 的Encoder/Decoder使用RNN来作为序列的预测器
 
-### [Transformer](https://www.zhihu.com/zvideo/1437034536677404672) (Attention Is All You Need)
+### [Transformer](https://www.zhihu.com/zvideo/1437034536677404672) (Attention Is All You Need) 当时主要用于翻译领域
 (CNN / RNN 终结者？)
 
 * 把Encoder/Decoder 中 RNN/CNN 转为只使用 Attention
@@ -107,12 +107,16 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 * 较为适应翻译类型的任务
 
 ### GPT 2018/06
-* 先训练通用的预测下个语句的模型
-* 再进行FineTune，即训练一个线性层对于下游任务进行适配，分类，蕴含，相似，多选
+* OpenAI
+* decoder only
+* 类似于视觉中所做的那样，先训练通用的预测下个语句的模型
+* 再进行FineTune，即添加一个线性层和前面的模型一起梯度更新，对于下游任务进行适配，分类，蕴含，相似，多选
 
-### BERT 2018/10
-* encoder only
-* 遮掩语句的一部分而不是预测下个Token
+### BERT 2018/10 Bidirectional Encoder Representations from Transformers
+* Google
+* encoder only， 深
+* 预训练模型（后续可以再训练/Finetune）
+* 双向，遮掩语句的一部分而不是预测下个Token
 * 受GPT启发
 * 数据集是GPT 4倍数据，参数大三倍
 
@@ -125,7 +129,7 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 
 ### GPT-3 2020/05 （给到比较少的下游用例）
 * 175B, params
-* 下游任务时不做主模块的梯度更新
+* 下游任务时不做主模块的梯度更新（不再进行FineTune）
 
 ### Instruction GPT
 
@@ -136,7 +140,7 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 ### CLIP
 
 # 3D
-
+这块比较独立，后续计划单独放一个
 ### NeRF
   * 体渲染隐式表达，空间每个点的不同方向，透明度，颜色
 
