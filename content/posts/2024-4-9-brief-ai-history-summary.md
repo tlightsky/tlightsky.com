@@ -140,6 +140,13 @@ AlexNet当时参加了2012年的挑战赛，并且一举大幅减少了图像识
 
 # 弱监督的视觉模型
 
+### ViT
+* 使用Transformer来处理图片
+* 需要降低序列长度，这里将16x16合并为一个（patch embedding:Linear Projection of Flattened Patches）
+* CNN，先验信息，locality和平移不变性
+* 但是如果数据提升后，可以超过CNN
+* 借鉴BERT的[CLS] classification当做第一个HEAD，用于分类
+
 ### CLIP
 
 # 3D
