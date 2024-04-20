@@ -111,3 +111,24 @@ ray_cast_system.run_if(in_state(Test::RayCast))
 - 在路径规划或AI开发中，Gizmos可以用来表示AI的视觉或听觉范围。
 
 总的来说，Gizmos是游戏开发和3D建模中一个非常重要的工具，它们通过提供直观的视觉参考来辅助开发和调试过程，虽然在最终产品中通常是看不见的。
+
+# custom_gltf_vertex_attribute.rs
+
+可以注意一下这里会返回一个`Builder`，后续可以继续set其他的`Plugin`
+
+```
+DefaultPlugins.set
+```
+
+另外在这个example里加载了gltf和wgsl两个资源，这里`mix`的第三个参数是混合比例，
+而在`smoothstep`中控制了当前点的重心坐标最小值和时间的关系，通过时间来对图形进行裁剪。
+`t>d`的部分为`0`，显示白色。`t+0.01<d`的部分为默认材质
+
+```wgsl
+@fragment
+fn fragment(input: FragmentInput) -> @location(0) vec4<f32> {
+    let d = min(input.barycentric.x, min(input.barycentric.y, input.barycentric.z));
+    let t = 0.25 * (0.85 + sin(1.0 * globals.time));
+    return mix(vec4(1.0,0.0,1.0,1.0), input.color, smoothstep(t, t+0.01, d));
+}
+```
