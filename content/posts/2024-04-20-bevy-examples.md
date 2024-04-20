@@ -121,8 +121,10 @@ DefaultPlugins.set
 ```
 
 另外在这个example里加载了gltf和wgsl两个资源，这里`mix`的第三个参数是混合比例，
+
 而在`smoothstep`中控制了当前点的重心坐标最小值和时间的关系，通过时间来对图形进行裁剪。
-`t>d`的部分为`0`，显示白色。`t+0.01<d`的部分为默认材质
+
+`t>d`的部分为`0`，显示白色，`t+0.01<d`的部分为默认材质。如果调整`t+0.01`为`t+0.5`可以看到边缘合并的效果。
 
 ```wgsl
 @fragment
@@ -132,3 +134,28 @@ fn fragment(input: FragmentInput) -> @location(0) vec4<f32> {
     return mix(vec4(1.0,0.0,1.0,1.0), input.color, smoothstep(t, t+0.01, d));
 }
 ```
+
+# mesh2d.rs
+最基本的setup，画了个紫色方块
+
+# mesh2d_manual.rs
+画了一个黄色的五角星
+
+## 通过手动构建顶点的方式造了一个五角星
+
+## 写了一个Plugin
+在plugin中注册了`ExtractSchedule` `Render`两个阶段，分别手动实现了对象的提取和加载渲染对象到渲染队列的过程
+
+# mesh2d_vertex_color_texture.rs
+正方形上画顶点色或加载图片
+
+# move_sprite.rs
+加载一张图片并形成一个`SpritBundle`，如何在`Update`里移动其位置
+
+# pixel_grid_snap.rs
+关闭MSAA之后旋转Sprit
+
+# rotation.rs
+一个极简化版本的塔防，四个位置的炮台会始终尝试瞄准移动物
+
+
