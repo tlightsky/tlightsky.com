@@ -171,3 +171,10 @@ fn fragment(input: FragmentInput) -> @location(0) vec4<f32> {
 文字的各种变换
 
 # texture_atlas.rs
+对于图片的各种padding处理
+
+# transparency_2d.rs
+透明图片的叠加
+
+# wireframe_2d.rs
+各种画线框
