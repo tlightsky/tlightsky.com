@@ -158,4 +158,16 @@ fn fragment(input: FragmentInput) -> @location(0) vec4<f32> {
 # rotation.rs
 一个极简化版本的塔防，四个位置的炮台会始终尝试瞄准移动物
 
+# sprite_sheet.rs
+加载PNG，使用 `TextureAtlasLayout`+`TextureAtlas`， 在Update的时候切换部分PNG内容来进行动画的播放
 
+# sprite_slice.rs
+对材质做各种变换和处理的Demo
+
+# sprite_tile.rs
+材质平铺Demo
+
+# text2d.rs
+文字的各种变换
+
+# texture_atlas.rs
